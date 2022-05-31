@@ -39,7 +39,7 @@ function Table(props){
         <tr key={coin.id} >
         <td>{coin.rank}</td>
         <td>
-        <img src={"https://assets.coincap.io/assets/icons/" +sym +"@2x.png"} alt='icon' style={{width:"75px"}}/>
+        <img src={"https://assets.coincap.io/assets/icons/" +sym +"@2x.png"} alt='icon' className='img'/>
         {coin.name}
         </td>
         <td>${parseFloat(coin.priceUsd).toFixed(2)}</td>
