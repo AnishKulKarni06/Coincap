@@ -26,11 +26,11 @@ function Table(props){
           <th>RANK</th>
           <th>NAME</th>
           <th>PRICE</th>
-          <th>MARKET CAP</th>
-          <th>VOLUME</th>
-          <th>CHANGE %</th>
-          <th>VWAP</th>
-          <th>SUPPLY</th>
+          <th className='hide'>MARKET CAP</th>
+          <th className='hide hide1'>VOLUME</th>
+          <th className='hide hide1'>CHANGE %</th>
+          <th className='hide hide1'>VWAP</th>
+          <th className='hide hide1'>SUPPLY</th>
         </tr>
       </thead>
     {task.data && task.data.slice(0,props.value).map((coin)=>{
@@ -43,11 +43,11 @@ function Table(props){
         {coin.name}
         </td>
         <td>${parseFloat(coin.priceUsd).toFixed(2)}</td>
-        <td>${parseFloat(coin.marketCapUsd).toFixed(2)}</td>
-        <td>${parseFloat(coin.volumeUsd24Hr).toFixed(2)}</td>
-        <td>{parseFloat(coin.changePercent24Hr).toFixed(2)}</td>
-        <td>${parseFloat(coin.vwap24Hr).toFixed(2)}</td>
-        <td>{parseFloat(coin.supply).toFixed(2)}</td>
+        <td className='hide'>${parseFloat(coin.marketCapUsd).toFixed(2)}</td>
+        <td className='hide hide1'>${parseFloat(coin.volumeUsd24Hr).toFixed(2)}</td>
+        <td className='hide hide1'>{parseFloat(coin.changePercent24Hr).toFixed(2)}</td>
+        <td className='hide hide1'>${parseFloat(coin.vwap24Hr).toFixed(2)}</td>
+        <td className='hide hide1'>{parseFloat(coin.supply).toFixed(2)}</td>
         </tr>
           )
     })}
