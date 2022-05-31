@@ -1,0 +1,17 @@
+.left{
+    margin-left:15%;
+}
+
+.icon{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 100px;
+    height: auto;
+    margin-right:23%;
+    margin-left: 10%;
+}
+
+.search{
+    margin-right:10% ;
+}
