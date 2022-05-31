@@ -32,6 +32,10 @@ th, td {
     .img{
       width: 50px;
     }
+      
+    .hide{
+      display: none;
+    }
   }
 
   @media only screen and (max-width: 900px) {
@@ -42,6 +46,11 @@ th, td {
         width: 75vw;
         padding: 1rem;
         background-color:white;
+    }
+      
+      
+    .hide1{
+      display: none;
     }
   }
 
