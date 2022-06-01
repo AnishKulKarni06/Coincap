@@ -1,6 +1,10 @@
 .left{
-    margin-left:15%;
+    margin-left:10%;
 }
+.small{
+    width: 100px;
+}
+
 
 .icon{
     margin-top: 1rem;
@@ -8,10 +12,10 @@
     position: relative;
     width: 100px;
     height: auto;
-    margin-right:23%;
-    margin-left: 10%;
+    margin-right:20%;
+    margin-left: 2%;
 }
 
 .search{
-    margin-right:10% ;
+    margin-right:12% ;
 }
